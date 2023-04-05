@@ -10,10 +10,10 @@ const Header = () => {
               <img src={logo} alt="logo" />
             </Link>
             <nav>
-                <NavLink to="/">Shop</NavLink>
-                <NavLink to="/orders">Order</NavLink>
-                <NavLink to="/inventory">Inverntory</NavLink>
-                <NavLink to="/login">Login</NavLink>
+                <NavLink className={({isActive})=>(isActive?'active':'')} to="/">Shop</NavLink>
+                <NavLink className={({isActive})=>(isActive?'active':'')} to="/orders">Order</NavLink>
+                <NavLink className={({isActive})=>(isActive?'active':'')} to="/inventory">Inverntory</NavLink>
+                <NavLink className={({isActive})=>(isActive?'active':'')} to="/login">Login</NavLink>
             </nav>
             
         </div>
