@@ -1,0 +1,30 @@
+.review-item{
+    border: 2px solid red;
+    width: 570px;
+    margin-bottom: 25px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.review-item img{
+    width: 90px;
+}
+.review-item p{
+    margin: 2px;
+}
+.dlt-btn{
+    cursor: pointer;
+    color: red;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.091);
+}
+.item-details{
+    padding-left:20px ;
+    
+}
