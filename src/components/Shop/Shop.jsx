@@ -3,6 +3,10 @@ import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './shop.css'
+import { deleteShoppingCart } from '../../utilities/fakedb';
+import { Link } from 'react-router-dom';
+import { FaArrowRight} from "react-icons/fa";
+
 
 
 const Shop = () => {
@@ -36,6 +40,12 @@ useEffect(()=>{
     }
     setCart(savedCart)
 },[products])
+
+
+const handleClearCart=()=>{
+    setCart([])
+    deleteShoppingCart()
+}
    
     
     return (
@@ -46,12 +56,14 @@ useEffect(()=>{
                     key={product.id} 
                     product={product}
                     handleProduct={handleProduct}
+
                     ></Product>)
                }
             </div>
             <div className='cart-container'>
-               <Cart cart={cart}></Cart>
-           
+               <Cart handleClearCart={handleClearCart} FaArrowRight={FaArrowRight} cart={cart}>
+                  <Link className='link' to={'/orders'}>Review Order</Link>
+               </Cart>
             </div>
           
         </div>

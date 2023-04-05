@@ -5,3 +5,32 @@
     position: sticky;
     top: 80px;
 }
+.clear-cart{
+    width: 70%;
+    margin: 10px auto;
+    background-color: rgba(246, 255, 0, 0.521);
+    padding: 10px;
+    border-radius: 5px;
+    color: red;
+    font-size: 17px;
+    display: block;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+}
+.proceed-cart{
+    cursor: pointer;
+    width: 70%;
+    margin: 10px auto;
+    background-color: rgba(0, 255, 34, 0.726);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(253, 252, 248);
+    font-size: 17px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    
+}
